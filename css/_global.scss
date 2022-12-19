@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+}
+.make-own-btn{
+    height: 100%;
+    padding: 20px 50px;
+    margin: 0px 15px;
+    background-color: #862333;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.4s;
+    &:hover{
+        background-color: $btn-hover;
+        padding: 20px 50px;
+    }
+}
+p{
+    color: #707070;
+    font-size: 18px;
+}

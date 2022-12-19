@@ -1,0 +1,56 @@
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    transition: top 0.3s;
+    z-index: 1000; 
+    .logo{
+        height: 50px;
+        width: 150px;
+        object-fit: contain;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        .lan{
+            .en{
+                border-right: 1px solid Black;
+                padding-right: 4px;
+            }
+            .bn{
+                padding-left: 4px;
+            }
+            display: flex;
+            border-left: 0px solid rgba(20, 69, 133, 0.883);
+            border-right: 0px solid rgba(20, 69, 133, 0.883);
+            font-size: 13px;
+            padding: 0 20 px;
+            cursor: pointer;
+            align-items: center;
+        }
+        .login{
+            svg{
+                color: #ffff;
+                background-color: #862333;
+                border-radius: 50px;
+                padding: 5px;
+            }
+             padding: 20px 20px;
+             border-radius: 1pc solid rgba(20, 69, 133, 0.883);
+             small{
+                 padding: 0px;
+                 color: black;
+                 font-size: 13px;
+             }
+        }
+        .cart{
+            svg{
+                color: #862333;
+            }
+            padding: 20px 10px;
+        }
+    }
+}

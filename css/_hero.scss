@@ -1,0 +1,81 @@
+.hero-content{
+    .hero{
+        .user-location-input{
+            display: flex;
+            align-items: center;
+            input{
+                padding: 18px 15px;
+                width: 550px;
+                border: 1px solid #cccc;
+                position: relative;
+                &:focus{
+                    border: 1px solid transparent;
+                    outline: 2px solid #862333;
+                }
+            }
+            input:focus + span{
+                margin-left: 15px;
+                margin-top: -35px;
+                background: #ffff;
+                display: block;
+                font-size: 11px;
+                padding: 5px;
+                color: #862333;
+            }
+            span{
+                position: absolute;
+                transform: translateY(-50%);
+                transition: 0.2s;
+                pointer-events: none;
+                padding-left: 15px;
+                margin-top: 21px;
+                color: #cccc;
+            }
+        }
+        .input-icon{
+            display: flex;
+            position: relative;
+            right: 40px;
+            top: 0%;
+            color: #862333;
+            cursor: pointer;
+        }
+        .centers-btn{
+            height: 100%;
+            padding: 20px 50px;
+            margin: 0px 15px;
+            background-color: #862333;
+            color: #ffff;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.4s;
+            &:hover{
+                background-color: $btn-hover;
+                padding: 20px 50px;
+            }
+        }
+        .make-own-btn{
+            @extend .centers-btn;
+        
+        }
+        display: flex;
+        flex-direction: column;
+        min-height: 540px;
+        justify-content: center;
+        width: 980px;
+        margin-top: 50px
+    }
+}
+
+.big-img{
+    width: 110%;
+    min-height: 540px;
+    margin-left: 62%;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
